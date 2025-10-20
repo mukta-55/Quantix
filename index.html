@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quantix</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator-container">
+
+    <div class="calculator">
+
+      <!-- Top controls: placed at top-right as(both appear on right) -->
+      <div class="top-controls">
+        <div class="left-space"></div>
+        <div class="right-controls">
+          <button id="switch-mode" class="top-btn">Switch Mode</button>
+          <button id="theme-toggle" class="top-btn">Toggle Theme</button>
+        </div>
+      </div>
+
+      <!-- Brand header -->
+      <div class="brand">
+        <div class="title">Quantix</div>
+        <div class="tagline">Precision in every click</div>
+      </div>
+
+      <!-- Live preview (small, above main display) -->
+      <div id="live-preview" class="live-preview" aria-hidden="true"></div>
+
+      <!-- Display row + memory + DEG/RAD indicator -->
+      <div class="display-row">
+        <div class="memory-row">
+          <button class="mem-btn" id="mc">MC</button>
+          <button class="mem-btn" id="mr">MR</button>
+          <button class="mem-btn" id="mplus">M+</button>
+          <button class="mem-btn" id="mminus">M-</button>
+        </div>
+
+        <input id="display" class="display" type="text" placeholder="0" readonly>
+
+        <div class="mode-indicators">
+          <button id="deg-rad" class="deg-btn" title="Toggle Degrees/Radians">DEG</button>
+        </div>
+      </div>
+
+      <!-- Buttons grid (4 columns) - keep positions same -->
+      <div class="buttons" id="btnGrid">
+       
+        <!-- I'll render buttons as elements with data-pos so JS can re-label them -->
+        <!-- Row 1 -->
+        <button data-pos="b0"></button>
+        <button data-pos="b1"></button>
+        <button data-pos="b2"></button>
+        <button data-pos="b3"></button>
+
+        <!-- Row 2 -->
+        <button data-pos="b4"></button>
+        <button data-pos="b5"></button>
+        <button data-pos="b6"></button>
+        <button data-pos="b7"></button>
+
+        <!-- Row 3 -->
+        <button data-pos="b8"></button>
+        <button data-pos="b9"></button>
+        <button data-pos="b10"></button>
+        <button data-pos="b11"></button>
+
+        <!-- Row 4 -->
+        <button data-pos="b12"></button>
+        <button data-pos="b13"></button>
+        <button data-pos="b14"></button>
+        <button data-pos="b15"></button>
+
+        <!-- Row 5 -->
+        <button data-pos="b16"></button>
+        <button data-pos="b17"></button>
+        <button data-pos="b18"></button>
+        <button data-pos="b19"></button>
+
+        <!-- Below grid - percent in left column slot b20 -->
+        <button data-pos="b20" class="percent-slot"></button>
+      </div>
+
+    </div>
+
+    <!-- History / Search -->
+    <div class="history">
+      <div class="history-header">
+        <h3>History</h3>
+        <button id="clear-history" class="clear-btn">Clear</button>
+      </div>
+
+      <input id="history-search" class="history-search" placeholder="Search history (e.g. sin, 5²)">
+
+      <ul id="history-list" class="history-list" aria-live="polite"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
