@@ -103,8 +103,11 @@ If you have ideas for new features or improvements, fork the repository, make yo
 
 ---
 
-##  Live Demo  
-🔗 [**View Quantix Live Demo (coming soon)**](#)
+ 
+## Live Demo
+[View Quantix on GitHub Pages](https://mukta-55.github.io/Quantix/)
+
+)
 
 
 ---
