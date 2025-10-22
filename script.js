@@ -27,8 +27,8 @@ let history = [];           // {expr: 'sin(30)+5', result: '...'}
 const basicConfig = {
   b0:{label:'C', action:'clear'},
   b1:{label:'←', action:'back'},
-  b2:{label:'÷', action:'÷'},
-  b3:{label:'×', action:'×'},
+  b2:{label:'/', action:'/'},
+  b3:{label:'*', action:'*'},
 
   b4:{label:'7', action:'7'},
   b5:{label:'8', action:'8'},
