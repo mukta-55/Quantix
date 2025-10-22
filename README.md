@@ -107,6 +107,7 @@ If you have ideas for new features or improvements, fork the repository, make yo
 ## Live Demo
 [View Quantix on GitHub Pages](https://mukta-55.github.io/Quantix/)
 
+_Last updated: October 22, 2025_
 )
 
 
